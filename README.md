@@ -103,7 +103,7 @@ All processors can be individually enabled/disabled through the admin configurat
 If you want to contribute please follow the below instructions:
 
 1. Create an issue and describe your idea
-2. [Fork this repository](https://github.com/alekseon/log-details/fork)
+2. [Fork this repository](https://github.com/Alekseon/module-log-details/fork)
 3. Create your feature branch (`git checkout -b my-new-feature`)
 4. Commit your changes
 5. Publish the branch (`git push origin my-new-feature`)
@@ -111,7 +111,7 @@ If you want to contribute please follow the below instructions:
 
 ## Issue Tracking
 
-For issues, please use the [issue tracker](https://github.com/alekseon/log-details/issues).
+For issues, please use the [issue tracker](https://github.com/Alekseon/module-log-details/issues).
 
 Issues help keep this project alive and strong, so let us know if you find anything!
 
