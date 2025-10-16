@@ -53,9 +53,20 @@ class LogLevel implements \Magento\Framework\Option\ArrayInterface
     {
         $options = [];
 
-        $levels = \Monolog\Logger::getLevels();
-        foreach ($levels as $level) {
-            $options[$level] = \Monolog\Logger::getLevelName($level);
+        // Use predefined log levels compatible with both old and new Monolog versions
+        $levels = [
+            100 => 'DEBUG',
+            200 => 'INFO', 
+            250 => 'NOTICE',
+            300 => 'WARNING',
+            400 => 'ERROR',
+            500 => 'CRITICAL',
+            550 => 'ALERT',
+            600 => 'EMERGENCY'
+        ];
+        
+        foreach ($levels as $level => $name) {
+            $options[$level] = $name;
         }
 
         return $options;
