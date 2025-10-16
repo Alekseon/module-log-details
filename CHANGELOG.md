@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 ### Fixed
 
+## [1.0.1] - 2025-01-16
+### Fixed
+- Fixed Monolog compatibility issue - replaced deprecated getLevels() method with hardcoded log levels
+
 ## [1.0.0] - 2025-01-16
 ### Added
 - Initial public release
