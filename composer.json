@@ -1,0 +1,39 @@
+{
+    "name": "alekseon/log-details",
+    "description": "Magento 2 extension that adds contextual information to system logs",
+    "keywords": [
+        "magento2",
+        "logging",
+        "debugging",
+        "context",
+        "alekseon"
+    ],
+    "homepage": "https://github.com/alekseon/log-details",
+    "require": {
+        "magento/framework": "^102.0.0 | ^103.0.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Alekseon",
+            "homepage": "https://alekseon.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/alekseon/log-details/issues",
+        "source": "https://github.com/alekseon/log-details"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Alekseon\\LogDetails\\": ""
+        }
+    }
+}

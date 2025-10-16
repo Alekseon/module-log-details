@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © Alekseon sp. z o.o.
+ * http://www.alekseon.com/
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Psr\Log\LoggerInterface">
+		<arguments>
+			<argument name="processors" xsi:type="array">
+				<item name="alekseon_log_details_processor_web" xsi:type="array">
+					<item name="0" xsi:type="object">Alekseon\LogDetails\Processor\Web</item>
+					<item name="1" xsi:type="string">addDetails</item>
+				</item>
+				<item name="alekseon_log_details_processor_cron" xsi:type="array">
+					<item name="0" xsi:type="object">Alekseon\LogDetails\Processor\Cron</item>
+					<item name="1" xsi:type="string">addDetails</item>
+				</item>
+				<item name="alekseon_log_details_processor_console_command" xsi:type="array">
+					<item name="0" xsi:type="object">Alekseon\LogDetails\Processor\ConsoleCommand</item>
+					<item name="1" xsi:type="string">addDetails</item>
+				</item>
+				<item name="alekseon_log_details_processor_trace" xsi:type="array">
+					<item name="0" xsi:type="object">Alekseon\LogDetails\Processor\Trace</item>
+					<item name="1" xsi:type="string">addDetails</item>
+				</item>
+			</argument>
+		</arguments>
+	</type>
+	<type name="Magento\Cron\Model\Schedule">
+		<plugin name="Alekseon_LogDetails::SetCronDataPlugin" type="Alekseon\LogDetails\Plugin\SetCronDataPlugin" sortOrder="1" />
+	</type>
+	<type name="Symfony\Component\Console\Command\Command">
+		<plugin name="Alekseon_LogDetails::SetConsoleCommandDataPlugin" type="Alekseon\LogDetails\Plugin\SetConsoleCommandDataPlugin" sortOrder="1" />
+	</type>
+</config>
