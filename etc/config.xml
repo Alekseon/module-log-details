@@ -20,14 +20,6 @@
                 <enable>1</enable>
                 <log_level>400,500</log_level>
             </cron>
-            <bg_task>
-                <enable>1</enable>
-                <log_level>400,500</log_level>
-            </bg_task>
-            <dataflow>
-                <enable>1</enable>
-                <log_level>400,500</log_level>
-            </dataflow>
             <command>
                 <enable>1</enable>
                 <log_level>400,500</log_level>

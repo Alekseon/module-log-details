@@ -48,28 +48,6 @@
                     <source_model>Alekseon\LogDetails\Model\Config\Source\LogLevel</source_model>
                 </field>
             </group>
-            <group id="bg_task" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
-                <label>Background Task</label>
-                <field id="enable" translate="label" type="select" sortOrder="5" showInDefault="1">
-                    <label>Enabled</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>
-                <field id="log_level" translate="label" type="multiselect" sortOrder="5" showInDefault="1">
-                    <label>For Selected Error Levels</label>
-                    <source_model>Alekseon\LogDetails\Model\Config\Source\LogLevel</source_model>
-                </field>
-            </group>
-            <group id="dataflow" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
-                <label>Dataflows</label>
-                <field id="enable" translate="label" type="select" sortOrder="5" showInDefault="1">
-                    <label>Enabled</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>
-                <field id="log_level" translate="label" type="multiselect" sortOrder="5" showInDefault="1">
-                    <label>For Selected Error Levels</label>
-                    <source_model>Alekseon\LogDetails\Model\Config\Source\LogLevel</source_model>
-                </field>
-            </group>
             <group id="command" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Command</label>
                 <field id="enable" translate="label" type="select" sortOrder="5" showInDefault="1">

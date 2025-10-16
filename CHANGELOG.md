@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 ### Fixed
 
+## [1.0.2] - 2025-01-16
+### Fixed
+- Removed bg_task and dataflow references from config.xml and system.xml
+- Fixed Magento framework version constraint for better compatibility
+
 ## [1.0.1] - 2025-01-16
 ### Fixed
 - Fixed Monolog compatibility issue - replaced deprecated getLevels() method with hardcoded log levels
